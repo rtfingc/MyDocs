@@ -1,0 +1,21 @@
+#!/bin/bash
+pip install sphinx
+#支持markdown
+sphinx-quickstart
+#> Separate source and build directories (y/n) [n]: y
+#> Name prefix for templates and static dir [_]:
+
+pip install recommonmark
+pip install sphinx_rtd_theme
+pip install sphinx-markdown-tables
+#修改conf.py
+#source_suffix = ['.rst', '.md' ]
+#html_theme = 'sphinx_rtd_theme'
+#source_parsers = {                                    
+#    '.md': 'recommonmark.parser.CommonMarkParser',    
+#}                                                     
+#支持markdown表格
+#extensions = [
+#    'sphinx_markdown_tables',
+#]
+#make html
